@@ -25,17 +25,11 @@ const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
 const menuItems = $$('.menuList-item')
-const containerItems = $$('.container-item')
 
 menuItems.forEach((menuItem,index) => {
-    const containerItem = containerItems[index]
-
     menuItem.onclick = function () {
         $('.menuList-item.active').classList.remove('active')
-        $('.container-item.active').classList.remove('active')
-        
 
         this.classList.add('active')
-        containerItem.classList.add('active')
     }
 })

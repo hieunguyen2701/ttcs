@@ -45,6 +45,7 @@ html {
     font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -278,10 +279,9 @@ body {
 
 /* container start */
 .container {
-    position: fixed;
     max-width: 1796px;
+    min-height: 100vh;
     top: 0;
-    bottom: 0;
     right: 0;
     left: 120px;
     margin-top: 20px;
@@ -290,10 +290,10 @@ body {
     transition: 0.5s;
 }
 
-.container-item.active {
-    display: block;
+.container-item {
+    width: 100%;
+    padding: 10px;
+    transition: 0.5s;
 }
 
-.container-item {
-    display: none;
-}
+

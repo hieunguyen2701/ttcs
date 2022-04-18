@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Demo Web</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                     </div>
                     <ul class="menuList">
                         <li class="menuList-item active">
-                            <a href="#">
+                            <a href="./index.html">
                                 <div class="menulist-item-icon">
                                     <i class="ti-home"></i>
                                 </div>
@@ -30,7 +31,7 @@
                             </a>
                         </li>
                         <li class="menuList-item">
-                            <a href="#">
+                            <a href="./nhansu.html">
                                 <div class="menulist-item-icon">
                                     <i class="ti-user"></i>
                                 </div>
@@ -38,7 +39,7 @@
                             </a>
                         </li>
                         <li class="menuList-item">
-                            <a href="#">
+                            <a href="./lich.html">
                                 <div class="menulist-item-icon">
                                     <i class="ti-calendar"></i>
                                 </div>
@@ -46,7 +47,7 @@
                             </a>
                         </li>
                         <li class="menuList-item">
-                            <a href="#">
+                            <a href="./chamcong.html">
                                 <div class="menulist-item-icon">
                                     <i class="ti-bar-chart"></i>
                                 </div>
@@ -70,21 +71,117 @@
             <div class="col-container col-94">
                 <div class="container">
                     <!-- menu item container begin -->
-                    <div class="container-item home-container active">
-                        <h1>HOME</h1>
-                        <p>noi dung demo home</p>
-                    </div>
-                    <div class="container-item employee-container">
-                        <h1>NHAN SU</h1>
-                        <p>noi dung demo nhan su</p>
-                    </div>
-                    <div class="container-item calendar-container">
-                        <h1>LICH LAM VIEC</h1>
-                        <P>thoi gian lam viec</P>
-                    </div>
-                    <div class="container-item time-keeping-container">
-                        <h1>CHAM CONG</h1>
-                        <P>cham cong cho nhan vien</P>
+                    <div class="container-item home-container">
+                        <!-- tin tuc start -->
+                        <h1 class="home-container-title">Tin tức</h1>
+                        <div class="home-container-slider">
+                            <div class="home-container-slides">
+                                <!-- radio button start -->
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+                                <!-- radio button end -->
+                                <!-- slide img start -->
+                                <div class="slide first">
+                                    <img src="./assets/img/slider/slider_1.jpg" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/img/slider/slider_2.jpg" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/img/slider/slider_3.jpg" alt="">
+                                </div>
+                                <div class="slide">
+                                    <img src="./assets/img/slider/slider_4.jpg" alt="">
+                                </div>
+                                <!-- slide img end -->
+                                <!-- navigation auto start -->
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+                                <!-- navigation auto end -->
+                            </div>
+                            <!-- manual navigation start -->
+                            <div class="navigation-manual">
+                                <label for="radio1" class="manual-btn"></label>
+                                <label for="radio2" class="manual-btn"></label>
+                                <label for="radio3" class="manual-btn"></label>
+                                <label for="radio4" class="manual-btn"></label>
+                            </div>
+                            <!-- manual navigation start -->
+                        </div>
+                        <!-- tin tuc end -->
+                        <!-- todo list start -->
+                        <h1 class="home-container-title">Todo list</h1>
+                        <table class="todo-list-table">
+                            <thead class="todo-list-title-list">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>To do</th>
+                                    <th>Status</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody class="todo-list-work">
+                                <tr>
+                                    <th>1</th>
+                                    <th>Fix bug</th>
+                                    <th>
+                                        <input type="checkbox" name="" class="todo-list-check">
+                                    </th>
+                                    <th>
+                                        <input type="button" value="Change" class="todo-list-change-btn">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <th>Fix bug</th>
+                                    <th>
+                                        <input type="checkbox" name="" class="todo-list-check">
+                                    </th>
+                                    <th>
+                                        <input type="button" value="Change" class="todo-list-change-btn">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <th>Fix bug</th>
+                                    <th>
+                                        <input type="checkbox" name="" class="todo-list-check">
+                                    </th>
+                                    <th>
+                                        <input type="button" value="Change" class="todo-list-change-btn">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <th>Fix bug</th>
+                                    <th>
+                                        <input type="checkbox" name="" class="todo-list-check">
+                                    </th>
+                                    <th>
+                                        <input type="button" value="Change" class="todo-list-change-btn">
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <th>Fix bug</th>
+                                    <th>
+                                        <input type="checkbox" name="" class="todo-list-check">
+                                    </th>
+                                    <th>
+                                        <input type="button" value="Change" class="todo-list-change-btn">
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="add-todo-btn">Add todo</button>
+                        <div class="clear"></div>
+                        <!-- todo list end -->
                     </div>
                     <!-- menu container end -->
                 </div>
@@ -93,6 +190,7 @@
         </div>
             
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
