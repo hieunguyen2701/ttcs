@@ -114,61 +114,49 @@
 #radio4:checked ~.navigation-auto .auto-btn4 {
     background: var(--primary-color);
 }
-/* todo list css */
-table tr th {
-    border: 1px solid var(--border-color);
-}
 
-.todo-list-table {
-    width: 100%;
-}
+/* nhan su onl css */
 
-th:first-child {
-    width: 10%;
-}
-
-th:last-child {
-    width: 10%;
-}
-
-th:nth-child(3) {
-    width: 10%;
-}
-
-.todo-list-table {
-    font-size: 1.6rem;
-    line-height: 1.6;
-}
-
-.todo-list-change-btn {
-    padding: 4px 10px;
-    margin: 4px;
-    background-color: var(--primary-color);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    color: var(--white-color);
-    cursor: pointer;
-}
-
-.todo-list-check {
-    cursor: pointer;
-}
-
-.add-todo-btn {
-    padding: 4px 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    font-size: 1.6rem;
-    color: var(--white-color);
-    background: var(--primary-color);
+.employee-onl-wrapped {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
-    margin-left: 10%;
-    float: right;
+}
+
+.employee-onl-wrapped .col-full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.employee-info:hover {
     cursor: pointer;
 }
 
-.clear {
-    clear: both;
+.employee-onl-wrapped .col-half {
+    margin: 0 8px;
 }
 
+.employee-onl-titlle {
+    font-size: 2.8rem;
+}
 
+.employee-onl-wrapped .employee-info {
+    border: 1px solid var(--border-color);
+    box-shadow: 5px 5px 10px #ccc;
+    border-radius: 5px;
+    
+}
+
+.employee-status {
+    padding: 10px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 110px;
+    background-color: red;
+}
+
+.employee-status.active {
+    background-color: var(--primary-color);
+}

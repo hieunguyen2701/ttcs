@@ -36,7 +36,11 @@
 }
 
 .employee-container-content-wrapped.active {
-    display: block;
+    display: flex;
+}
+
+.employee-container-content-wrapped .col-half {
+    margin: 0 8px;
 }
 
 .employee-container-content{
@@ -218,7 +222,10 @@ input[type = "text"] {
 .employee-new-img-upload {
     width: 100px;
     height: 74px;
-    background: url(../img/upload/upload-img.png) top center / cover no-repeat;
+    background-image: url(../img/upload/upload-img.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 
 .upload-img-btn {
@@ -234,6 +241,10 @@ input[type = "text"] {
     color: var(--white-color);
     border-radius: 10px;
     cursor: pointer;
+}
+
+#upload-img {
+    display: none;
 }
 
 .submit-form-btn {

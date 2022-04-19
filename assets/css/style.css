@@ -12,6 +12,14 @@
     --background-color: rgb(209, 209, 209); 
 }
 
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
 .col-6 {
     width: 6%;
     height: 100vh;

@@ -23,3 +23,6 @@ for(var i = date.getFullYear(); i >= 1930; --i){
 }
 
 selectYear.innerHTML = getYear
+
+
+
