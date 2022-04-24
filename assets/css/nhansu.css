@@ -60,6 +60,7 @@
     align-items: center;
     margin: 10px;
     flex: 2;
+    position: relative;
 }
 
 .employee-info-img {
@@ -228,6 +229,7 @@ input[type = "text"] {
     background-size: cover;
 }
 
+.search-img-btn,
 .upload-img-btn {
     width: 100px;
     height: 40px;
@@ -241,6 +243,10 @@ input[type = "text"] {
     color: var(--white-color);
     border-radius: 10px;
     cursor: pointer;
+}
+
+#search-img {
+    display: none;
 }
 
 #upload-img {
@@ -261,4 +267,35 @@ input[type = "text"] {
 .submit-form-btn:hover,
 .upload-img-btn:hover {
     opacity: 0.8;
+}
+
+.employee-search-by-name span {
+    font-size: 1.6rem;
+
+}
+
+.search-container {
+    flex-direction: column;
+}
+.search-wrapped {
+    display: flex;
+}
+
+.employee-search-result {
+    display: none;
+}
+
+.employee-search-result > span {
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+span.search-none {
+    display: none;
+    color: red;
+}
+
+.employee-search-by-name, .employee-search-by-img {
+    flex: 1;
 }

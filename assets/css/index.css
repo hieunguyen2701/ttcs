@@ -152,9 +152,10 @@
 .employee-status {
     padding: 10px;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     margin-left: 110px;
     background-color: red;
+    right: 20px;
 }
 
 .employee-status.active {

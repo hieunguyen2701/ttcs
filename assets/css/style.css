@@ -25,6 +25,7 @@
     height: 100vh;
     margin-right: -2px;
     padding-right: 2px;
+    transition: 0.5s;
 }
 
 .col-94 {
@@ -32,6 +33,7 @@
     height: 100vh;
     margin-left: -2px;
     padding-left: 2px;
+    transition: 0.5s;
 }
 
 .col-15 {
@@ -39,6 +41,7 @@
     height: 100vh;
     margin-right: -2px;
     padding-right: 2px;
+    transition: 0.5s;
 }
 
 .col-85 {
@@ -46,6 +49,7 @@
     height: 100vh;
     margin-left: -2px;
     padding-left: 2px;
+    transition: 0.5s;
 }
 
 html {

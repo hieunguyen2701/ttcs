@@ -70,6 +70,7 @@
                            <li class="employee-container-item">Tìm kiếm nhân viên</li>
                         </ul>
                         <div class="employee-wrapped">
+                            <!-- thong tin nhan vien -->
                             <div class="employee-container-content-wrapped active">
                                 <div class="col-half">
                                     <div class="employee-container-content">
@@ -236,6 +237,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- them nhan vien -->
                             <div class="employee-container-content-wrapped">
                                 <form action="" class="employee-document">
                                     <h1 class="employee-document-title">Thông tin bản thân</h1>
@@ -244,7 +246,7 @@
                                             <div class="employee-new-name-gender">
                                                 <div class="employee-new-name">
                                                     <span>Họ và tên: </span>
-                                                    <input type="text" id="employee-new-name-input" placeholder="Chữ hoa">
+                                                    <input type="text" id="employee-new-name-input" placeholder="Ex: Nguyen Duy Hieu">
                                                 </div>
                                                 <div class="employee-new-gender">
                                                     <input type="radio" name="employee-new-gender" id="gender1"><span>Male</span>
@@ -333,8 +335,37 @@
                                     <button type="submit" class="submit-form-btn">Thêm nhân viên</button>
                                 </form>
                             </div>
-                            <div class="employee-container-content-wrapped">
-                                
+                            <!-- tim kiem -->
+                            <div class="employee-container-content-wrapped search-container">
+                                <!-- tim kiem theo ten -->
+                                <div class="search-wrapped">
+                                    <div class="employee-search-by-name">
+                                        <h1 class="employee-search-title">Tìm kiếm theo tên</h1>
+                                        <span>Nhập tên nhân viên: </span>
+                                        <input type="text" name="" id="search-input">
+                                    </div>
+                                    <!-- tim kiem bang hinh -->
+                                    <div class="employee-search-by-img">
+                                        <h1 class="employee-search-title">Tìm kiếm bằng hình ảnh</h1>
+                                        <label for="search-img" class="search-img-btn">Upload ảnh</label>
+                                        <input type="file" name="" id="search-img">
+                                    </div>
+                                </div>
+                                <!-- search result -->
+                                <div class="employee-search-result">
+                                    <span>Kết quả</span>
+                                    <div class="employee-info">
+                                        <div class="employee-info-img"></div>
+                                        <div class="employee-about">
+                                            <p class="employee-name">Nguyen Duy Hieu</p>
+                                            <div class="employee-desc">
+                                                <span class="employee-age">Age: 22</span>
+                                                <span class="employee-position">Position: Truong phong</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="search-none">Không có kết quả cần tìm</span>
+                                </div>
                             </div>
                         </div>
                     </div>
