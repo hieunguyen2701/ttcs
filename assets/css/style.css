@@ -37,7 +37,7 @@
 }
 
 .col-15 {
-    width: 15%;
+    min-width: 220px;
     height: 100vh;
     margin-right: -2px;
     padding-right: 2px;
@@ -66,7 +66,7 @@ body {
 
 .wrapped {
     width: 100%;
-    max-width: 1920px;
+    min-width: 1519px;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -91,10 +91,11 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 99;
 }
 
 .navigation.open {
-    width: 210px;
+    width: 200px;
 }
 
 .menuToggle {

@@ -98,7 +98,7 @@
 }
 
 .employee-delete,
-.employee-fix {
+.employee-show-info {
     display: flex;
     width: 50px;
     height: 50px;
@@ -111,7 +111,7 @@
 }
 
 .employee-delete,
-.employee-fix {
+.employee-show-info {
     background-color: var(--primary-color);
     border-radius: 50%;
     color: var(--white-color);
@@ -253,7 +253,7 @@ input[type = "text"] {
     display: none;
 }
 
-.submit-form-btn {
+.submit-form-btn, .btn {
     margin-top: 20px;
     padding: 8px;
     outline: none;
@@ -298,5 +298,57 @@ span.search-none {
 
 .employee-search-by-name, .employee-search-by-img {
     flex: 1;
+}
+
+/* modal css */
+.col-container {
+    position: relative;
+}
+
+.modal {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    width: 500px;
+    min-height: 400px;
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 16px;
+    font-size: 1.6rem;
+}
+
+.modal-title {
+    color: var(--primary-color);
+}
+
+.modal-employee-doc .col-full {
+    display: flex;
+}
+
+.modal-img {
+    width: 160px;
+    height: 160px;
+    background: url(../img/avatar/admin.jpg)  top center / cover no-repeat;
+}
+
+.modal-employee-doc .col-full .col-half:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
